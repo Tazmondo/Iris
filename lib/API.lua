@@ -616,7 +616,7 @@ return function(Iris: Types.Iris)
             unchecked: () -> boolean, -- once when unchecked.
             hovered: () -> boolean
         }
-        State = {
+        States = {
             isChecked = State<boolean>? -- whether the box is checked.
         }
         ```
@@ -644,7 +644,7 @@ return function(Iris: Types.Iris)
             active: () -> boolean, -- if the state index equals the RadioButton's index.
             hovered: () -> boolean
         }
-        State = {
+        States = {
             index = State<any>? -- the state set by the index of a RadioButton.
         }
         ```
@@ -756,7 +756,7 @@ return function(Iris: Types.Iris)
             uncollapsed: () -> boolean,
             hovered: () -> boolean
         }
-        State = {
+        States = {
             isUncollapsed: State<boolean>? -- whether the widget is collapsed.
         }
         ```
@@ -784,7 +784,7 @@ return function(Iris: Types.Iris)
             uncollapsed: () -> boolean,
             hovered: () -> boolean
         }
-        State = {
+        States = {
             isUncollapsed: State<boolean>? -- whether the widget is collapsed.
         }
         ```
@@ -815,9 +815,7 @@ return function(Iris: Types.Iris)
         ```lua
         hasChildren: true
         hasState: true
-        Arguments = {}
-        Events = {}
-        State = {
+        States = {
             index: State<number>? -- whether the widget is collapsed.
         }
         ```
@@ -853,7 +851,7 @@ return function(Iris: Types.Iris)
             opened: () -> boolean
             closed: () -> boolean
         }
-        State = {
+        States = {
             isOpened: State<boolean>?
         }
         ```
